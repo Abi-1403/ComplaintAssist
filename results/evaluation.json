@@ -1,0 +1,196 @@
+{
+  "mode": "offline_rules_baseline",
+  "dataset": "30 labelled synthetic template cases",
+  "n_cases": 30,
+  "classification_accuracy": 0.9,
+  "citation_id_validity_rate": 1.0,
+  "cases_with_missing_fields": 27,
+  "human_review_flag_rate": 1.0,
+  "important_limitations": [
+    "Template-derived cases overestimate generalisation to real complaints.",
+    "Citation ID validity only tests existence, not whether the passage supports the claim.",
+    "No real staff time saving or regulatory compliance demonstrated."
+  ],
+  "per_case": [
+    {
+      "case_id": "CASE-001",
+      "expected": "payment_dispute",
+      "predicted": "payment_dispute",
+      "correct": true
+    },
+    {
+      "case_id": "CASE-002",
+      "expected": "payment_dispute",
+      "predicted": "payment_dispute",
+      "correct": true
+    },
+    {
+      "case_id": "CASE-003",
+      "expected": "payment_dispute",
+      "predicted": "other",
+      "correct": false
+    },
+    {
+      "case_id": "CASE-004",
+      "expected": "suspected_fraud",
+      "predicted": "suspected_fraud",
+      "correct": true
+    },
+    {
+      "case_id": "CASE-005",
+      "expected": "suspected_fraud",
+      "predicted": "suspected_fraud",
+      "correct": true
+    },
+    {
+      "case_id": "CASE-006",
+      "expected": "suspected_fraud",
+      "predicted": "suspected_fraud",
+      "correct": true
+    },
+    {
+      "case_id": "CASE-007",
+      "expected": "account_access",
+      "predicted": "account_access",
+      "correct": true
+    },
+    {
+      "case_id": "CASE-008",
+      "expected": "account_access",
+      "predicted": "account_access",
+      "correct": true
+    },
+    {
+      "case_id": "CASE-009",
+      "expected": "account_access",
+      "predicted": "account_access",
+      "correct": true
+    },
+    {
+      "case_id": "CASE-010",
+      "expected": "fees_charges",
+      "predicted": "fees_charges",
+      "correct": true
+    },
+    {
+      "case_id": "CASE-011",
+      "expected": "fees_charges",
+      "predicted": "fees_charges",
+      "correct": true
+    },
+    {
+      "case_id": "CASE-012",
+      "expected": "fees_charges",
+      "predicted": "fees_charges",
+      "correct": true
+    },
+    {
+      "case_id": "CASE-013",
+      "expected": "service_quality",
+      "predicted": "service_quality",
+      "correct": true
+    },
+    {
+      "case_id": "CASE-014",
+      "expected": "service_quality",
+      "predicted": "service_quality",
+      "correct": true
+    },
+    {
+      "case_id": "CASE-015",
+      "expected": "service_quality",
+      "predicted": "service_quality",
+      "correct": true
+    },
+    {
+      "case_id": "CASE-016",
+      "expected": "other",
+      "predicted": "fees_charges",
+      "correct": false
+    },
+    {
+      "case_id": "CASE-017",
+      "expected": "payment_dispute",
+      "predicted": "payment_dispute",
+      "correct": true
+    },
+    {
+      "case_id": "CASE-018",
+      "expected": "payment_dispute",
+      "predicted": "payment_dispute",
+      "correct": true
+    },
+    {
+      "case_id": "CASE-019",
+      "expected": "payment_dispute",
+      "predicted": "other",
+      "correct": false
+    },
+    {
+      "case_id": "CASE-020",
+      "expected": "suspected_fraud",
+      "predicted": "suspected_fraud",
+      "correct": true
+    },
+    {
+      "case_id": "CASE-021",
+      "expected": "suspected_fraud",
+      "predicted": "suspected_fraud",
+      "correct": true
+    },
+    {
+      "case_id": "CASE-022",
+      "expected": "suspected_fraud",
+      "predicted": "suspected_fraud",
+      "correct": true
+    },
+    {
+      "case_id": "CASE-023",
+      "expected": "account_access",
+      "predicted": "account_access",
+      "correct": true
+    },
+    {
+      "case_id": "CASE-024",
+      "expected": "account_access",
+      "predicted": "account_access",
+      "correct": true
+    },
+    {
+      "case_id": "CASE-025",
+      "expected": "account_access",
+      "predicted": "account_access",
+      "correct": true
+    },
+    {
+      "case_id": "CASE-026",
+      "expected": "fees_charges",
+      "predicted": "fees_charges",
+      "correct": true
+    },
+    {
+      "case_id": "CASE-027",
+      "expected": "fees_charges",
+      "predicted": "fees_charges",
+      "correct": true
+    },
+    {
+      "case_id": "CASE-028",
+      "expected": "fees_charges",
+      "predicted": "fees_charges",
+      "correct": true
+    },
+    {
+      "case_id": "CASE-029",
+      "expected": "service_quality",
+      "predicted": "service_quality",
+      "correct": true
+    },
+    {
+      "case_id": "CASE-030",
+      "expected": "service_quality",
+      "predicted": "service_quality",
+      "correct": true
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+[
+ {"id":"CH-01","text":"I paid for a laptop online and the same purchase appeared twice on my statement.","category":"payment_dispute","policy":"POL-002-S2.2"},
+ {"id":"CH-02","text":"The merchant says the debit card transaction was refused, but the money left my balance.","category":"payment_dispute","policy":"POL-002-S2.1"},
+ {"id":"CH-03","text":"A bank transfer to my landlord never arrived despite the balance being reduced.","category":"payment_dispute","policy":"POL-002-S2.1"},
+ {"id":"CH-04","text":"I don't recognise this withdrawal. I believe someone used my card without permission.","category":"suspected_fraud","policy":"POL-003-S3.1"},
+ {"id":"CH-05","text":"Someone phoned pretending to be the bank and took my one-time code. Transfers are still happening.","category":"suspected_fraud","policy":"POL-003-S3.2"},
+ {"id":"CH-06","text":"A stranger has taken over my online banking and I cannot stop them moving funds.","category":"suspected_fraud","policy":"POL-003-S3.2"},
+ {"id":"CH-07","text":"My mobile banking login won't accept my password even after resetting it.","category":"account_access","policy":"POL-004-S4.2"},
+ {"id":"CH-08","text":"Face verification keeps rejecting me and I am unable to enter the app.","category":"account_access","policy":"POL-004-S4.1"},
+ {"id":"CH-09","text":"My banking profile is blocked after I changed phones and I can't authenticate.","category":"account_access","policy":"POL-004-S4.2"},
+ {"id":"CH-10","text":"Please explain why my overdraft fee increased this month.","category":"fees_charges","policy":"POL-005-S5.1"},
+ {"id":"CH-11","text":"I was billed an unexpected maintenance charge on my current account.","category":"fees_charges","policy":"POL-005-S5.1"},
+ {"id":"CH-12","text":"There is a £15 monthly tariff cost that I was never told about.","category":"fees_charges","policy":"POL-005-S5.1"},
+ {"id":"CH-13","text":"Your adviser was rude during my visit to the branch on Monday.","category":"service_quality","policy":"POL-005-S5.2"},
+ {"id":"CH-14","text":"I have contacted the helpline four times and still have no response.","category":"service_quality","policy":"POL-005-S5.2"},
+ {"id":"CH-15","text":"The customer agent hung up before helping, and the service was unacceptable.","category":"service_quality","policy":"POL-005-S5.2"},
+ {"id":"CH-16","text":"Can you supply an annual statement for my savings account?","category":"other","policy":"POL-001-S1.1"},
+ {"id":"CH-17","text":"Please update the address on my correspondence; I recently moved.","category":"other","policy":"POL-001-S1.1"},
+ {"id":"CH-18","text":"I would like to register a complaint, but I have not yet explained the issue.","category":"other","policy":"POL-001-S1.1"}
+]

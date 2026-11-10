@@ -1,0 +1,146 @@
+[
+  {
+    "chunk_id": "POL-001-S1.1",
+    "policy_id": "POL-001",
+    "title": "Complaints Intake and Triage",
+    "version": "1.0",
+    "section": "1.1",
+    "text": "Record the original complaint, a unique case ID, the reported impact and any previous contact."
+  },
+  {
+    "chunk_id": "POL-001-S1.2",
+    "policy_id": "POL-001",
+    "title": "Complaints Intake and Triage",
+    "version": "1.0",
+    "section": "1.2",
+    "text": "Complaint priority must be reviewed by a handler. Cases alleging active fraud or immediate security risk require urgent specialist consideration."
+  },
+  {
+    "chunk_id": "POL-001-S1.3",
+    "policy_id": "POL-001",
+    "title": "Complaints Intake and Triage",
+    "version": "1.0",
+    "section": "1.3",
+    "text": "Do not assume a complaint is substantiated solely because an automated classifier marked it high priority."
+  },
+  {
+    "chunk_id": "POL-002-S2.1",
+    "policy_id": "POL-002",
+    "title": "Disputed Payments Procedure",
+    "version": "1.0",
+    "section": "2.1",
+    "text": "For a disputed card payment, document the transaction date, transaction amount and transaction reference. Flag missing evidence in the handover."
+  },
+  {
+    "chunk_id": "POL-002-S2.2",
+    "policy_id": "POL-002",
+    "title": "Disputed Payments Procedure",
+    "version": "1.0",
+    "section": "2.2",
+    "text": "Potential duplicate charges are referred to Payments. A specialist checks bank records before determining whether an adjustment is appropriate."
+  },
+  {
+    "chunk_id": "POL-002-S2.3",
+    "policy_id": "POL-002",
+    "title": "Disputed Payments Procedure",
+    "version": "1.0",
+    "section": "2.3",
+    "text": "Do not promise a refund or assert that fraud occurred before investigation."
+  },
+  {
+    "chunk_id": "POL-003-S3.1",
+    "policy_id": "POL-003",
+    "title": "Fraud Escalation Procedure",
+    "version": "1.0",
+    "section": "3.1",
+    "text": "Suspected fraud complaints must identify available transaction details and record whether a customer security contact has occurred."
+  },
+  {
+    "chunk_id": "POL-003-S3.2",
+    "policy_id": "POL-003",
+    "title": "Fraud Escalation Procedure",
+    "version": "1.0",
+    "section": "3.2",
+    "text": "Cases alleging ongoing fraud or compromised credentials should be highlighted promptly for the Fraud team. The AI must not independently restrict accounts."
+  },
+  {
+    "chunk_id": "POL-003-S3.3",
+    "policy_id": "POL-003",
+    "title": "Fraud Escalation Procedure",
+    "version": "1.0",
+    "section": "3.3",
+    "text": "Specialist staff decide the investigation and any account controls. Drafts must not present suspicion as confirmed fraud."
+  },
+  {
+    "chunk_id": "POL-004-S4.1",
+    "policy_id": "POL-004",
+    "title": "Account Access Procedure",
+    "version": "1.0",
+    "section": "4.1",
+    "text": "For account access issues, capture an account reference, a description of the login problem, and the last successful login where available."
+  },
+  {
+    "chunk_id": "POL-004-S4.2",
+    "policy_id": "POL-004",
+    "title": "Account Access Procedure",
+    "version": "1.0",
+    "section": "4.2",
+    "text": "Digital Support reviews password and authentication problems. Never request or record a customer password or one-time code in a complaint handover."
+  },
+  {
+    "chunk_id": "POL-005-S5.1",
+    "policy_id": "POL-005",
+    "title": "Fees and Service Complaints",
+    "version": "1.0",
+    "section": "5.1",
+    "text": "Fees complaints should provide fee amount and fee reference; Account Services investigates the application of fees."
+  },
+  {
+    "chunk_id": "POL-005-S5.2",
+    "policy_id": "POL-005",
+    "title": "Fees and Service Complaints",
+    "version": "1.0",
+    "section": "5.2",
+    "text": "Service complaints must describe the experience, date of contact and any previous contact reference if available."
+  },
+  {
+    "chunk_id": "POL-005-S5.3",
+    "policy_id": "POL-005",
+    "title": "Fees and Service Complaints",
+    "version": "1.0",
+    "section": "5.3",
+    "text": "Complaint handlers should distinguish customer allegations from verified records and record conflicting information explicitly."
+  },
+  {
+    "chunk_id": "POL-006-S6.1",
+    "policy_id": "POL-006",
+    "title": "Specialist Handover and Data Protection",
+    "version": "1.0",
+    "section": "6.1",
+    "text": "A specialist handover must include a factual summary, chronology, assigned team, evidence references, missing information and suggested next steps."
+  },
+  {
+    "chunk_id": "POL-006-S6.2",
+    "policy_id": "POL-006",
+    "title": "Specialist Handover and Data Protection",
+    "version": "1.0",
+    "section": "6.2",
+    "text": "All AI-generated handovers are drafts. An authorised employee must review, edit if needed and explicitly approve before finalisation."
+  },
+  {
+    "chunk_id": "POL-006-S6.3",
+    "policy_id": "POL-006",
+    "title": "Specialist Handover and Data Protection",
+    "version": "1.0",
+    "section": "6.3",
+    "text": "Do not insert sensitive personal information into external AI prompts. Reviewers must check evidence citations and retain a record of material edits."
+  },
+  {
+    "chunk_id": "POL-006-S6.4",
+    "policy_id": "POL-006",
+    "title": "Specialist Handover and Data Protection",
+    "version": "1.0",
+    "section": "6.4",
+    "text": "If evidence is incomplete or the AI output is uncertain, mark the case for human review rather than manufacture missing facts."
+  }
+]

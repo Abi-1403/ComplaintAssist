@@ -1,0 +1,393 @@
+[
+  {
+    "case_id": "CASE-001",
+    "complaint": "I was charged twice for a card payment of \u00a385. The extra transaction is still showing.",
+    "notes": [
+      "Customer reported a duplicate card charge on 02 Nov 2026.",
+      "Agent requested transaction supporting documents."
+    ],
+    "available_fields": [
+      "transaction amount",
+      "transaction date"
+    ],
+    "expected_category": "payment_dispute",
+    "fictional": true
+  },
+  {
+    "case_id": "CASE-002",
+    "complaint": "My card payment of \u00a3120 was debited but the merchant says it failed.",
+    "notes": [
+      "Customer contacted helpline about disputed payment.",
+      "Transaction reference PAY-2026-004 was recorded."
+    ],
+    "available_fields": [
+      "transaction reference",
+      "transaction amount"
+    ],
+    "expected_category": "payment_dispute",
+    "fictional": true
+  },
+  {
+    "case_id": "CASE-003",
+    "complaint": "My bank transfer went missing and has not reached the other account.",
+    "notes": [
+      "Customer supplied transaction date 01 Nov 2026.",
+      "Customer supplied amount \u00a3250."
+    ],
+    "available_fields": [
+      "transaction date",
+      "transaction amount"
+    ],
+    "expected_category": "payment_dispute",
+    "fictional": true
+  },
+  {
+    "case_id": "CASE-004",
+    "complaint": "There is an unauthorised \u00a3400 card transaction on my account.",
+    "notes": [
+      "Customer reported card transaction FRA-204.",
+      "No security callback completed."
+    ],
+    "available_fields": [
+      "transaction reference",
+      "transaction date"
+    ],
+    "expected_category": "suspected_fraud",
+    "fictional": true
+  },
+  {
+    "case_id": "CASE-005",
+    "complaint": "I think an active fraud scam is happening right now, with more money leaving.",
+    "notes": [
+      "Customer reported urgent ongoing unauthorised activity.",
+      "Security contact completed with fictional customer."
+    ],
+    "available_fields": [
+      "customer security contact"
+    ],
+    "expected_category": "suspected_fraud",
+    "fictional": true
+  },
+  {
+    "case_id": "CASE-006",
+    "complaint": "My card was stolen and someone used it yesterday.",
+    "notes": [
+      "Customer provided transaction date 03 Nov 2026.",
+      "Security contact was recorded."
+    ],
+    "available_fields": [
+      "transaction date",
+      "customer security contact"
+    ],
+    "expected_category": "suspected_fraud",
+    "fictional": true
+  },
+  {
+    "case_id": "CASE-007",
+    "complaint": "I am locked out of the mobile banking app after resetting my password.",
+    "notes": [
+      "Customer reported repeated login errors.",
+      "Account reference ACC-208 is available."
+    ],
+    "available_fields": [
+      "account reference"
+    ],
+    "expected_category": "account_access",
+    "fictional": true
+  },
+  {
+    "case_id": "CASE-008",
+    "complaint": "I cannot sign in because my two-factor login keeps failing.",
+    "notes": [
+      "Customer reported last successful login on 01 Nov 2026."
+    ],
+    "available_fields": [
+      "last successful login"
+    ],
+    "expected_category": "account_access",
+    "fictional": true
+  },
+  {
+    "case_id": "CASE-009",
+    "complaint": "The banking app crashes whenever I log in.",
+    "notes": [
+      "Account reference ACC-204 provided.",
+      "Last successful login date recorded."
+    ],
+    "available_fields": [
+      "account reference",
+      "last successful login"
+    ],
+    "expected_category": "account_access",
+    "fictional": true
+  },
+  {
+    "case_id": "CASE-010",
+    "complaint": "I was charged an overdraft fee of \u00a335 that I do not recognise.",
+    "notes": [
+      "Fee amount \u00a335 recorded.",
+      "Customer has not provided fee reference."
+    ],
+    "available_fields": [
+      "fee amount"
+    ],
+    "expected_category": "fees_charges",
+    "fictional": true
+  },
+  {
+    "case_id": "CASE-011",
+    "complaint": "Why is there a monthly charge on my account when I thought it was free?",
+    "notes": [
+      "Fee reference FEE-020 provided."
+    ],
+    "available_fields": [
+      "fee reference"
+    ],
+    "expected_category": "fees_charges",
+    "fictional": true
+  },
+  {
+    "case_id": "CASE-012",
+    "complaint": "The bank has taken interest and charges I do not understand.",
+    "notes": [
+      "Fee reference FEE-019 provided.",
+      "Fee amount \u00a319 recorded."
+    ],
+    "available_fields": [
+      "fee reference",
+      "fee amount"
+    ],
+    "expected_category": "fees_charges",
+    "fictional": true
+  },
+  {
+    "case_id": "CASE-013",
+    "complaint": "A staff member was rude during my visit and I want to complain.",
+    "notes": [
+      "Visit date recorded as 02 Nov 2026."
+    ],
+    "available_fields": [
+      "date of contact"
+    ],
+    "expected_category": "service_quality",
+    "fictional": true
+  },
+  {
+    "case_id": "CASE-014",
+    "complaint": "I waited over two weeks with no response to my previous complaint.",
+    "notes": [
+      "Previous contact reference C-221 recorded."
+    ],
+    "available_fields": [
+      "previous contact reference"
+    ],
+    "expected_category": "service_quality",
+    "fictional": true
+  },
+  {
+    "case_id": "CASE-015",
+    "complaint": "I received poor service and the agent ignored my messages.",
+    "notes": [
+      "Contact date and prior ticket reference C-222 both available."
+    ],
+    "available_fields": [
+      "date of contact",
+      "previous contact reference"
+    ],
+    "expected_category": "service_quality",
+    "fictional": true
+  },
+  {
+    "case_id": "CASE-016",
+    "complaint": "I would like to provide feedback on the bank newsletter.",
+    "notes": [
+      "Customer submitted general feedback through the web form."
+    ],
+    "available_fields": [
+      "complaint description"
+    ],
+    "expected_category": "other",
+    "fictional": true
+  },
+  {
+    "case_id": "CASE-017",
+    "complaint": "I was charged twice for a card payment of \u00a386. The extra transaction is still showing.",
+    "notes": [
+      "Customer reported a duplicate card charge on 02 Nov 2026.",
+      "Agent requested transaction supporting documents."
+    ],
+    "available_fields": [
+      "transaction amount",
+      "transaction date"
+    ],
+    "expected_category": "payment_dispute",
+    "fictional": true
+  },
+  {
+    "case_id": "CASE-018",
+    "complaint": "My card payment of \u00a3120 was debited but the merchant says it failed.",
+    "notes": [
+      "Customer contacted helpline about disputed payment.",
+      "Transaction reference PAY-2026-004 was recorded."
+    ],
+    "available_fields": [
+      "transaction reference",
+      "transaction amount"
+    ],
+    "expected_category": "payment_dispute",
+    "fictional": true
+  },
+  {
+    "case_id": "CASE-019",
+    "complaint": "My bank transfer went missing and has not reached the other account.",
+    "notes": [
+      "Customer supplied transaction date 01 Nov 2026.",
+      "Customer supplied amount \u00a3250."
+    ],
+    "available_fields": [
+      "transaction date"
+    ],
+    "expected_category": "payment_dispute",
+    "fictional": true
+  },
+  {
+    "case_id": "CASE-020",
+    "complaint": "There is an unauthorised \u00a3400 card transaction on my account.",
+    "notes": [
+      "Customer reported card transaction FRA-204.",
+      "No security callback completed."
+    ],
+    "available_fields": [
+      "transaction reference",
+      "transaction date"
+    ],
+    "expected_category": "suspected_fraud",
+    "fictional": true
+  },
+  {
+    "case_id": "CASE-021",
+    "complaint": "I think an active fraud scam is happening right now, with more money leaving.",
+    "notes": [
+      "Customer reported urgent ongoing unauthorised activity.",
+      "Security contact completed with fictional customer."
+    ],
+    "available_fields": [
+      "customer security contact"
+    ],
+    "expected_category": "suspected_fraud",
+    "fictional": true
+  },
+  {
+    "case_id": "CASE-022",
+    "complaint": "My card was stolen and someone used it yesterday.",
+    "notes": [
+      "Customer provided transaction date 03 Nov 2026.",
+      "Security contact was recorded."
+    ],
+    "available_fields": [
+      "transaction date"
+    ],
+    "expected_category": "suspected_fraud",
+    "fictional": true
+  },
+  {
+    "case_id": "CASE-023",
+    "complaint": "I am locked out of the mobile banking app after resetting my password.",
+    "notes": [
+      "Customer reported repeated login errors.",
+      "Account reference ACC-208 is available."
+    ],
+    "available_fields": [
+      "account reference"
+    ],
+    "expected_category": "account_access",
+    "fictional": true
+  },
+  {
+    "case_id": "CASE-024",
+    "complaint": "I cannot sign in because my two-factor login keeps failing.",
+    "notes": [
+      "Customer reported last successful login on 01 Nov 2026."
+    ],
+    "available_fields": [
+      "last successful login"
+    ],
+    "expected_category": "account_access",
+    "fictional": true
+  },
+  {
+    "case_id": "CASE-025",
+    "complaint": "The banking app crashes whenever I log in.",
+    "notes": [
+      "Account reference ACC-204 provided.",
+      "Last successful login date recorded."
+    ],
+    "available_fields": [
+      "account reference"
+    ],
+    "expected_category": "account_access",
+    "fictional": true
+  },
+  {
+    "case_id": "CASE-026",
+    "complaint": "I was charged an overdraft fee of \u00a335 that I do not recognise.",
+    "notes": [
+      "Fee amount \u00a335 recorded.",
+      "Customer has not provided fee reference."
+    ],
+    "available_fields": [
+      "fee amount"
+    ],
+    "expected_category": "fees_charges",
+    "fictional": true
+  },
+  {
+    "case_id": "CASE-027",
+    "complaint": "Why is there a monthly charge on my account when I thought it was free?",
+    "notes": [
+      "Fee reference FEE-020 provided."
+    ],
+    "available_fields": [
+      "fee reference"
+    ],
+    "expected_category": "fees_charges",
+    "fictional": true
+  },
+  {
+    "case_id": "CASE-028",
+    "complaint": "The bank has taken interest and charges I do not understand.",
+    "notes": [
+      "Fee reference FEE-019 provided.",
+      "Fee amount \u00a319 recorded."
+    ],
+    "available_fields": [
+      "fee reference"
+    ],
+    "expected_category": "fees_charges",
+    "fictional": true
+  },
+  {
+    "case_id": "CASE-029",
+    "complaint": "A staff member was rude during my visit and I want to complain.",
+    "notes": [
+      "Visit date recorded as 02 Nov 2026."
+    ],
+    "available_fields": [
+      "date of contact"
+    ],
+    "expected_category": "service_quality",
+    "fictional": true
+  },
+  {
+    "case_id": "CASE-030",
+    "complaint": "I waited over two weeks with no response to my previous complaint.",
+    "notes": [
+      "Previous contact reference C-221 recorded."
+    ],
+    "available_fields": [
+      "previous contact reference"
+    ],
+    "expected_category": "service_quality",
+    "fictional": true
+  }
+]

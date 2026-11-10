@@ -1,0 +1,19 @@
+case_id,complaint,expected_category,predicted_category,predicted_team,category_correct,expected_policy,retrieved_policy_ids,expected_policy_in_top4,error,seconds
+CH-01,I paid for a laptop online and the same purchase appeared twice on my statement.,payment_dispute,payment_dispute,Payments,True,POL-002-S2.2,POL-002-S2.1; POL-006-S6.1; POL-006-S6.4; POL-002-S2.2,True,,7.07
+CH-02,"The merchant says the debit card transaction was refused, but the money left my balance.",payment_dispute,payment_dispute,Payments,True,POL-002-S2.1,POL-002-S2.1; POL-006-S6.1; POL-006-S6.4; POL-002-S2.2,True,,1.48
+CH-03,A bank transfer to my landlord never arrived despite the balance being reduced.,payment_dispute,payment_dispute,Payments,True,POL-002-S2.1,POL-002-S2.1; POL-002-S2.2; POL-006-S6.1; POL-006-S6.4,True,,1.41
+CH-04,I don't recognise this withdrawal. I believe someone used my card without permission.,suspected_fraud,suspected_fraud,Fraud,True,POL-003-S3.1,POL-002-S2.1; POL-006-S6.1; POL-003-S3.1; POL-006-S6.4,True,,1.89
+CH-05,Someone phoned pretending to be the bank and took my one-time code. Transfers are still happening.,suspected_fraud,suspected_fraud,Fraud,True,POL-003-S3.2,POL-002-S2.1; POL-004-S4.2; POL-006-S6.1; POL-002-S2.2,False,,2.14
+CH-06,A stranger has taken over my online banking and I cannot stop them moving funds.,suspected_fraud,account_access,Digital Support,False,POL-003-S3.2,POL-004-S4.2; POL-004-S4.1; POL-006-S6.1; POL-002-S2.1,False,,1.48
+CH-07,My mobile banking login won't accept my password even after resetting it.,account_access,account_access,Digital Support,True,POL-004-S4.2,POL-004-S4.2; POL-004-S4.1; POL-006-S6.1; POL-002-S2.1,True,,1.49
+CH-08,Face verification keeps rejecting me and I am unable to enter the app.,account_access,account_access,Digital Support,True,POL-004-S4.1,POL-004-S4.1; POL-004-S4.2; POL-006-S6.1; POL-002-S2.1,True,,1.4
+CH-09,My banking profile is blocked after I changed phones and I can't authenticate.,account_access,account_access,Digital Support,True,POL-004-S4.2,POL-004-S4.2; POL-004-S4.1; POL-006-S6.1; POL-006-S6.4,True,,1.4
+CH-10,Please explain why my overdraft fee increased this month.,fees_charges,fees_charges,Account Services,True,POL-005-S5.1,POL-006-S6.1; POL-005-S5.1; POL-002-S2.1; POL-006-S6.4,True,,1.92
+CH-11,I was billed an unexpected maintenance charge on my current account.,fees_charges,fees_charges,Account Services,True,POL-005-S5.1,POL-006-S6.1; POL-005-S5.1; POL-002-S2.1; POL-004-S4.1,True,,1.48
+CH-12,There is a £15 monthly tariff cost that I was never told about.,fees_charges,fees_charges,Account Services,True,POL-005-S5.1,POL-006-S6.1; POL-006-S6.4; POL-002-S2.1; POL-002-S2.2,False,,1.55
+CH-13,Your adviser was rude during my visit to the branch on Monday.,service_quality,service_quality,Complaints,True,POL-005-S5.2,POL-006-S6.1; POL-002-S2.1; POL-006-S6.4; POL-005-S5.2,True,,1.42
+CH-14,I have contacted the helpline four times and still have no response.,service_quality,service_quality,Complaints,True,POL-005-S5.2,POL-006-S6.1; POL-002-S2.1; POL-006-S6.4; POL-005-S5.2,True,,1.4
+CH-15,"The customer agent hung up before helping, and the service was unacceptable.",service_quality,service_quality,Complaints,True,POL-005-S5.2,POL-006-S6.1; POL-002-S2.1; POL-006-S6.4; POL-005-S5.2,True,,1.39
+CH-16,Can you supply an annual statement for my savings account?,other,account_access,Digital Support,False,POL-001-S1.1,POL-004-S4.1; POL-004-S4.2; POL-006-S6.1; POL-002-S2.1,False,,1.45
+CH-17,Please update the address on my correspondence; I recently moved.,other,account_access,Digital Support,False,POL-001-S1.1,POL-004-S4.1; POL-004-S4.2; POL-006-S6.1; POL-002-S2.1,False,,1.62
+CH-18,"I would like to register a complaint, but I have not yet explained the issue.",other,other,General Support,True,POL-001-S1.1,POL-006-S6.4; POL-006-S6.1; POL-002-S2.1; POL-001-S1.1,True,,2.11

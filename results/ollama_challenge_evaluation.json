@@ -1,0 +1,344 @@
+{
+  "dataset": "18 synthetic phrase-variation challenge cases",
+  "model": "local Ollama (see OLLAMA_MODEL environment variable; default qwen2.5:3b)",
+  "total_cases": 18,
+  "successful_model_calls": 18,
+  "failed_model_calls": 0,
+  "classification_correct": 15,
+  "classification_accuracy_on_successful_calls": 0.8333,
+  "classification_accuracy_all_cases_failures_wrong": 0.8333,
+  "expected_policy_in_top4": 13,
+  "expected_policy_recall_at4_on_successful_calls": 0.7222,
+  "notes": [
+    "Synthetic authored dataset, not a representative sample of real bank complaints.",
+    "Retrieval uses the project's lexical policy search with the predicted category; it is not an LLM embedding-based RAG benchmark.",
+    "Finding the expected policy ID does not prove the generated handover cites it accurately.",
+    "This script tests classification and retrieval, not LLM handover quality or reviewer decisions."
+  ],
+  "details": [
+    {
+      "case_id": "CH-01",
+      "complaint": "I paid for a laptop online and the same purchase appeared twice on my statement.",
+      "expected_category": "payment_dispute",
+      "predicted_category": "payment_dispute",
+      "predicted_team": "Payments",
+      "category_correct": true,
+      "expected_policy": "POL-002-S2.2",
+      "retrieved_policy_ids": [
+        "POL-002-S2.1",
+        "POL-006-S6.1",
+        "POL-006-S6.4",
+        "POL-002-S2.2"
+      ],
+      "expected_policy_in_top4": true,
+      "error": "",
+      "seconds": 7.07
+    },
+    {
+      "case_id": "CH-02",
+      "complaint": "The merchant says the debit card transaction was refused, but the money left my balance.",
+      "expected_category": "payment_dispute",
+      "predicted_category": "payment_dispute",
+      "predicted_team": "Payments",
+      "category_correct": true,
+      "expected_policy": "POL-002-S2.1",
+      "retrieved_policy_ids": [
+        "POL-002-S2.1",
+        "POL-006-S6.1",
+        "POL-006-S6.4",
+        "POL-002-S2.2"
+      ],
+      "expected_policy_in_top4": true,
+      "error": "",
+      "seconds": 1.48
+    },
+    {
+      "case_id": "CH-03",
+      "complaint": "A bank transfer to my landlord never arrived despite the balance being reduced.",
+      "expected_category": "payment_dispute",
+      "predicted_category": "payment_dispute",
+      "predicted_team": "Payments",
+      "category_correct": true,
+      "expected_policy": "POL-002-S2.1",
+      "retrieved_policy_ids": [
+        "POL-002-S2.1",
+        "POL-002-S2.2",
+        "POL-006-S6.1",
+        "POL-006-S6.4"
+      ],
+      "expected_policy_in_top4": true,
+      "error": "",
+      "seconds": 1.41
+    },
+    {
+      "case_id": "CH-04",
+      "complaint": "I don't recognise this withdrawal. I believe someone used my card without permission.",
+      "expected_category": "suspected_fraud",
+      "predicted_category": "suspected_fraud",
+      "predicted_team": "Fraud",
+      "category_correct": true,
+      "expected_policy": "POL-003-S3.1",
+      "retrieved_policy_ids": [
+        "POL-002-S2.1",
+        "POL-006-S6.1",
+        "POL-003-S3.1",
+        "POL-006-S6.4"
+      ],
+      "expected_policy_in_top4": true,
+      "error": "",
+      "seconds": 1.89
+    },
+    {
+      "case_id": "CH-05",
+      "complaint": "Someone phoned pretending to be the bank and took my one-time code. Transfers are still happening.",
+      "expected_category": "suspected_fraud",
+      "predicted_category": "suspected_fraud",
+      "predicted_team": "Fraud",
+      "category_correct": true,
+      "expected_policy": "POL-003-S3.2",
+      "retrieved_policy_ids": [
+        "POL-002-S2.1",
+        "POL-004-S4.2",
+        "POL-006-S6.1",
+        "POL-002-S2.2"
+      ],
+      "expected_policy_in_top4": false,
+      "error": "",
+      "seconds": 2.14
+    },
+    {
+      "case_id": "CH-06",
+      "complaint": "A stranger has taken over my online banking and I cannot stop them moving funds.",
+      "expected_category": "suspected_fraud",
+      "predicted_category": "account_access",
+      "predicted_team": "Digital Support",
+      "category_correct": false,
+      "expected_policy": "POL-003-S3.2",
+      "retrieved_policy_ids": [
+        "POL-004-S4.2",
+        "POL-004-S4.1",
+        "POL-006-S6.1",
+        "POL-002-S2.1"
+      ],
+      "expected_policy_in_top4": false,
+      "error": "",
+      "seconds": 1.48
+    },
+    {
+      "case_id": "CH-07",
+      "complaint": "My mobile banking login won't accept my password even after resetting it.",
+      "expected_category": "account_access",
+      "predicted_category": "account_access",
+      "predicted_team": "Digital Support",
+      "category_correct": true,
+      "expected_policy": "POL-004-S4.2",
+      "retrieved_policy_ids": [
+        "POL-004-S4.2",
+        "POL-004-S4.1",
+        "POL-006-S6.1",
+        "POL-002-S2.1"
+      ],
+      "expected_policy_in_top4": true,
+      "error": "",
+      "seconds": 1.49
+    },
+    {
+      "case_id": "CH-08",
+      "complaint": "Face verification keeps rejecting me and I am unable to enter the app.",
+      "expected_category": "account_access",
+      "predicted_category": "account_access",
+      "predicted_team": "Digital Support",
+      "category_correct": true,
+      "expected_policy": "POL-004-S4.1",
+      "retrieved_policy_ids": [
+        "POL-004-S4.1",
+        "POL-004-S4.2",
+        "POL-006-S6.1",
+        "POL-002-S2.1"
+      ],
+      "expected_policy_in_top4": true,
+      "error": "",
+      "seconds": 1.4
+    },
+    {
+      "case_id": "CH-09",
+      "complaint": "My banking profile is blocked after I changed phones and I can't authenticate.",
+      "expected_category": "account_access",
+      "predicted_category": "account_access",
+      "predicted_team": "Digital Support",
+      "category_correct": true,
+      "expected_policy": "POL-004-S4.2",
+      "retrieved_policy_ids": [
+        "POL-004-S4.2",
+        "POL-004-S4.1",
+        "POL-006-S6.1",
+        "POL-006-S6.4"
+      ],
+      "expected_policy_in_top4": true,
+      "error": "",
+      "seconds": 1.4
+    },
+    {
+      "case_id": "CH-10",
+      "complaint": "Please explain why my overdraft fee increased this month.",
+      "expected_category": "fees_charges",
+      "predicted_category": "fees_charges",
+      "predicted_team": "Account Services",
+      "category_correct": true,
+      "expected_policy": "POL-005-S5.1",
+      "retrieved_policy_ids": [
+        "POL-006-S6.1",
+        "POL-005-S5.1",
+        "POL-002-S2.1",
+        "POL-006-S6.4"
+      ],
+      "expected_policy_in_top4": true,
+      "error": "",
+      "seconds": 1.92
+    },
+    {
+      "case_id": "CH-11",
+      "complaint": "I was billed an unexpected maintenance charge on my current account.",
+      "expected_category": "fees_charges",
+      "predicted_category": "fees_charges",
+      "predicted_team": "Account Services",
+      "category_correct": true,
+      "expected_policy": "POL-005-S5.1",
+      "retrieved_policy_ids": [
+        "POL-006-S6.1",
+        "POL-005-S5.1",
+        "POL-002-S2.1",
+        "POL-004-S4.1"
+      ],
+      "expected_policy_in_top4": true,
+      "error": "",
+      "seconds": 1.48
+    },
+    {
+      "case_id": "CH-12",
+      "complaint": "There is a \u00a315 monthly tariff cost that I was never told about.",
+      "expected_category": "fees_charges",
+      "predicted_category": "fees_charges",
+      "predicted_team": "Account Services",
+      "category_correct": true,
+      "expected_policy": "POL-005-S5.1",
+      "retrieved_policy_ids": [
+        "POL-006-S6.1",
+        "POL-006-S6.4",
+        "POL-002-S2.1",
+        "POL-002-S2.2"
+      ],
+      "expected_policy_in_top4": false,
+      "error": "",
+      "seconds": 1.55
+    },
+    {
+      "case_id": "CH-13",
+      "complaint": "Your adviser was rude during my visit to the branch on Monday.",
+      "expected_category": "service_quality",
+      "predicted_category": "service_quality",
+      "predicted_team": "Complaints",
+      "category_correct": true,
+      "expected_policy": "POL-005-S5.2",
+      "retrieved_policy_ids": [
+        "POL-006-S6.1",
+        "POL-002-S2.1",
+        "POL-006-S6.4",
+        "POL-005-S5.2"
+      ],
+      "expected_policy_in_top4": true,
+      "error": "",
+      "seconds": 1.42
+    },
+    {
+      "case_id": "CH-14",
+      "complaint": "I have contacted the helpline four times and still have no response.",
+      "expected_category": "service_quality",
+      "predicted_category": "service_quality",
+      "predicted_team": "Complaints",
+      "category_correct": true,
+      "expected_policy": "POL-005-S5.2",
+      "retrieved_policy_ids": [
+        "POL-006-S6.1",
+        "POL-002-S2.1",
+        "POL-006-S6.4",
+        "POL-005-S5.2"
+      ],
+      "expected_policy_in_top4": true,
+      "error": "",
+      "seconds": 1.4
+    },
+    {
+      "case_id": "CH-15",
+      "complaint": "The customer agent hung up before helping, and the service was unacceptable.",
+      "expected_category": "service_quality",
+      "predicted_category": "service_quality",
+      "predicted_team": "Complaints",
+      "category_correct": true,
+      "expected_policy": "POL-005-S5.2",
+      "retrieved_policy_ids": [
+        "POL-006-S6.1",
+        "POL-002-S2.1",
+        "POL-006-S6.4",
+        "POL-005-S5.2"
+      ],
+      "expected_policy_in_top4": true,
+      "error": "",
+      "seconds": 1.39
+    },
+    {
+      "case_id": "CH-16",
+      "complaint": "Can you supply an annual statement for my savings account?",
+      "expected_category": "other",
+      "predicted_category": "account_access",
+      "predicted_team": "Digital Support",
+      "category_correct": false,
+      "expected_policy": "POL-001-S1.1",
+      "retrieved_policy_ids": [
+        "POL-004-S4.1",
+        "POL-004-S4.2",
+        "POL-006-S6.1",
+        "POL-002-S2.1"
+      ],
+      "expected_policy_in_top4": false,
+      "error": "",
+      "seconds": 1.45
+    },
+    {
+      "case_id": "CH-17",
+      "complaint": "Please update the address on my correspondence; I recently moved.",
+      "expected_category": "other",
+      "predicted_category": "account_access",
+      "predicted_team": "Digital Support",
+      "category_correct": false,
+      "expected_policy": "POL-001-S1.1",
+      "retrieved_policy_ids": [
+        "POL-004-S4.1",
+        "POL-004-S4.2",
+        "POL-006-S6.1",
+        "POL-002-S2.1"
+      ],
+      "expected_policy_in_top4": false,
+      "error": "",
+      "seconds": 1.62
+    },
+    {
+      "case_id": "CH-18",
+      "complaint": "I would like to register a complaint, but I have not yet explained the issue.",
+      "expected_category": "other",
+      "predicted_category": "other",
+      "predicted_team": "General Support",
+      "category_correct": true,
+      "expected_policy": "POL-001-S1.1",
+      "retrieved_policy_ids": [
+        "POL-006-S6.4",
+        "POL-006-S6.1",
+        "POL-002-S2.1",
+        "POL-001-S1.1"
+      ],
+      "expected_policy_in_top4": true,
+      "error": "",
+      "seconds": 2.11
+    }
+  ]
+}

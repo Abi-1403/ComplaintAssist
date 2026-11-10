@@ -1,0 +1,299 @@
+{
+  "dataset": "18 separately authored synthetic phrase-variation challenge cases",
+  "mode": "offline_rules_baseline",
+  "n_cases": 18,
+  "category_accuracy": 0.389,
+  "expected_policy_recall_at_4": 0.444,
+  "per_category": {
+    "account_access": {
+      "support": 3,
+      "precision": 1.0,
+      "recall": 0.333
+    },
+    "fees_charges": {
+      "support": 3,
+      "precision": 1.0,
+      "recall": 0.333
+    },
+    "other": {
+      "support": 3,
+      "precision": 0.214,
+      "recall": 1.0
+    },
+    "payment_dispute": {
+      "support": 3,
+      "precision": 0,
+      "recall": 0.0
+    },
+    "service_quality": {
+      "support": 3,
+      "precision": 1.0,
+      "recall": 0.667
+    },
+    "suspected_fraud": {
+      "support": 3,
+      "precision": 0,
+      "recall": 0.0
+    }
+  },
+  "details": [
+    {
+      "id": "CH-01",
+      "expected": "payment_dispute",
+      "predicted": "other",
+      "category_correct": false,
+      "expected_policy": "POL-002-S2.2",
+      "retrieved_policy_ids": [
+        "POL-006-S6.1",
+        "POL-002-S2.1",
+        "POL-006-S6.4",
+        "POL-004-S4.1"
+      ],
+      "policy_recall_at_4": false
+    },
+    {
+      "id": "CH-02",
+      "expected": "payment_dispute",
+      "predicted": "other",
+      "category_correct": false,
+      "expected_policy": "POL-002-S2.1",
+      "retrieved_policy_ids": [
+        "POL-002-S2.1",
+        "POL-006-S6.1",
+        "POL-006-S6.4",
+        "POL-006-S6.3"
+      ],
+      "policy_recall_at_4": true
+    },
+    {
+      "id": "CH-03",
+      "expected": "payment_dispute",
+      "predicted": "other",
+      "category_correct": false,
+      "expected_policy": "POL-002-S2.1",
+      "retrieved_policy_ids": [
+        "POL-006-S6.1",
+        "POL-002-S2.1",
+        "POL-002-S2.2",
+        "POL-006-S6.4"
+      ],
+      "policy_recall_at_4": true
+    },
+    {
+      "id": "CH-04",
+      "expected": "suspected_fraud",
+      "predicted": "other",
+      "category_correct": false,
+      "expected_policy": "POL-003-S3.1",
+      "retrieved_policy_ids": [
+        "POL-006-S6.1",
+        "POL-002-S2.1",
+        "POL-006-S6.4",
+        "POL-006-S6.3"
+      ],
+      "policy_recall_at_4": false
+    },
+    {
+      "id": "CH-05",
+      "expected": "suspected_fraud",
+      "predicted": "other",
+      "category_correct": false,
+      "expected_policy": "POL-003-S3.2",
+      "retrieved_policy_ids": [
+        "POL-004-S4.2",
+        "POL-006-S6.1",
+        "POL-002-S2.2",
+        "POL-002-S2.1"
+      ],
+      "policy_recall_at_4": false
+    },
+    {
+      "id": "CH-06",
+      "expected": "suspected_fraud",
+      "predicted": "other",
+      "category_correct": false,
+      "expected_policy": "POL-003-S3.2",
+      "retrieved_policy_ids": [
+        "POL-006-S6.1",
+        "POL-002-S2.1",
+        "POL-006-S6.4",
+        "POL-006-S6.3"
+      ],
+      "policy_recall_at_4": false
+    },
+    {
+      "id": "CH-07",
+      "expected": "account_access",
+      "predicted": "account_access",
+      "category_correct": true,
+      "expected_policy": "POL-004-S4.2",
+      "retrieved_policy_ids": [
+        "POL-004-S4.2",
+        "POL-004-S4.1",
+        "POL-006-S6.1",
+        "POL-002-S2.1"
+      ],
+      "policy_recall_at_4": true
+    },
+    {
+      "id": "CH-08",
+      "expected": "account_access",
+      "predicted": "other",
+      "category_correct": false,
+      "expected_policy": "POL-004-S4.1",
+      "retrieved_policy_ids": [
+        "POL-006-S6.1",
+        "POL-002-S2.1",
+        "POL-006-S6.4",
+        "POL-002-S2.2"
+      ],
+      "policy_recall_at_4": false
+    },
+    {
+      "id": "CH-09",
+      "expected": "account_access",
+      "predicted": "other",
+      "category_correct": false,
+      "expected_policy": "POL-004-S4.2",
+      "retrieved_policy_ids": [
+        "POL-006-S6.1",
+        "POL-006-S6.4",
+        "POL-002-S2.1",
+        "POL-006-S6.3"
+      ],
+      "policy_recall_at_4": false
+    },
+    {
+      "id": "CH-10",
+      "expected": "fees_charges",
+      "predicted": "fees_charges",
+      "category_correct": true,
+      "expected_policy": "POL-005-S5.1",
+      "retrieved_policy_ids": [
+        "POL-006-S6.1",
+        "POL-005-S5.1",
+        "POL-002-S2.1",
+        "POL-006-S6.4"
+      ],
+      "policy_recall_at_4": true
+    },
+    {
+      "id": "CH-11",
+      "expected": "fees_charges",
+      "predicted": "other",
+      "category_correct": false,
+      "expected_policy": "POL-005-S5.1",
+      "retrieved_policy_ids": [
+        "POL-006-S6.1",
+        "POL-002-S2.1",
+        "POL-004-S4.1",
+        "POL-006-S6.4"
+      ],
+      "policy_recall_at_4": false
+    },
+    {
+      "id": "CH-12",
+      "expected": "fees_charges",
+      "predicted": "other",
+      "category_correct": false,
+      "expected_policy": "POL-005-S5.1",
+      "retrieved_policy_ids": [
+        "POL-006-S6.1",
+        "POL-006-S6.4",
+        "POL-002-S2.1",
+        "POL-004-S4.2"
+      ],
+      "policy_recall_at_4": false
+    },
+    {
+      "id": "CH-13",
+      "expected": "service_quality",
+      "predicted": "service_quality",
+      "category_correct": true,
+      "expected_policy": "POL-005-S5.2",
+      "retrieved_policy_ids": [
+        "POL-006-S6.1",
+        "POL-002-S2.1",
+        "POL-006-S6.4",
+        "POL-005-S5.2"
+      ],
+      "policy_recall_at_4": true
+    },
+    {
+      "id": "CH-14",
+      "expected": "service_quality",
+      "predicted": "service_quality",
+      "category_correct": true,
+      "expected_policy": "POL-005-S5.2",
+      "retrieved_policy_ids": [
+        "POL-006-S6.1",
+        "POL-002-S2.1",
+        "POL-006-S6.4",
+        "POL-005-S5.2"
+      ],
+      "policy_recall_at_4": true
+    },
+    {
+      "id": "CH-15",
+      "expected": "service_quality",
+      "predicted": "other",
+      "category_correct": false,
+      "expected_policy": "POL-005-S5.2",
+      "retrieved_policy_ids": [
+        "POL-006-S6.1",
+        "POL-002-S2.1",
+        "POL-006-S6.4",
+        "POL-005-S5.2"
+      ],
+      "policy_recall_at_4": true
+    },
+    {
+      "id": "CH-16",
+      "expected": "other",
+      "predicted": "other",
+      "category_correct": true,
+      "expected_policy": "POL-001-S1.1",
+      "retrieved_policy_ids": [
+        "POL-006-S6.1",
+        "POL-002-S2.1",
+        "POL-004-S4.1",
+        "POL-006-S6.4"
+      ],
+      "policy_recall_at_4": false
+    },
+    {
+      "id": "CH-17",
+      "expected": "other",
+      "predicted": "other",
+      "category_correct": true,
+      "expected_policy": "POL-001-S1.1",
+      "retrieved_policy_ids": [
+        "POL-006-S6.1",
+        "POL-002-S2.1",
+        "POL-006-S6.4",
+        "POL-006-S6.3"
+      ],
+      "policy_recall_at_4": false
+    },
+    {
+      "id": "CH-18",
+      "expected": "other",
+      "predicted": "other",
+      "category_correct": true,
+      "expected_policy": "POL-001-S1.1",
+      "retrieved_policy_ids": [
+        "POL-006-S6.4",
+        "POL-006-S6.1",
+        "POL-002-S2.1",
+        "POL-001-S1.1"
+      ],
+      "policy_recall_at_4": true
+    }
+  ],
+  "limitations": [
+    "Challenge cases were authored for this project, not sampled from banking operations.",
+    "Expected-policy Recall@4 checks retrieval of one labelled reference; it is not claim-level citation support.",
+    "Policy references are fictional; results do not establish regulatory adequacy.",
+    "Optional OpenAI mode not measured unless separately run with API access."
+  ]
+}
